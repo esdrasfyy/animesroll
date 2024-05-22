@@ -1,0 +1,13 @@
+/* Estilos para a div de pesquisa */
+
+
+/* Estilos para o campo de busca dentro da div de pesquisa */
+
+.logoSearch {
+  font-size: 22px;
+}
+.search{
+  margin-left: 30px;
+}
+
+/* Esconda os botões quando a div de pesquisa estiver visível */

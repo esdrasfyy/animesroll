@@ -1,0 +1,240 @@
+.dispFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(204, 204, 204);
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-height: 530px;
+  padding: 0 10px;
+}
+
+.leftSide{
+  max-width: 270px; 
+  min-width: 290px;
+  min-height: 530px;
+  height: 100%;
+  display: flex;
+  padding: 8px;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.54);
+  border-left: 3px solid orangered ;
+  border-top: 3px solid orangered;
+  border-right: 3px solid gray ;
+  border-bottom: 3px solid gray;
+}
+.logoLeftSide{
+  min-height: 295px;
+  width: 100%;
+  background-size: cover !important;
+  border-radius: 10px;
+}
+.titleLeftSide {
+  padding: 10px;
+  display: flex;
+  justify-content: left;
+  position: relative;
+  border: none;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.titleLeftSide::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: orangered; 
+}
+
+.titleLeftSide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background-color: gray;
+}
+.leftSynopse{
+  padding: 14px;
+  color: rgb(204, 204, 204);
+  position: relative;
+  border: none;
+  min-width: 221.562px;
+  min-height: 167.987px;
+}
+.leftSynopse::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: orangered;
+}
+
+.leftSynopse::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: gray;
+}
+.rigthSide{
+  display: flex;
+  flex-direction: column;
+  color: rgb(204, 204, 204);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.54);
+  border-left: 3px solid orangered ;
+  border-top: 3px solid orangered;
+  border-right: 3px solid gray ;
+  border-bottom: 3px solid gray;
+  min-height: 530px;
+  max-height: 530px;
+}
+.moreInfos{
+  padding: 0 !important;
+}
+.informationBlock{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  width: 100%;
+}
+.informationBlock > div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+.informationBlock > div > p{
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+}
+.informationBlock > div > a{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+}
+.informationBlock > div > p > b{
+  color: orangered;
+  margin-left: 5px;
+}
+.informationBlock > div > p > a{
+  color: orangered;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 5px;
+  position: relative;
+}
+.informationBlock > div > p > a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: gray;
+}
+.informationBlock > div > p > a::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: orangered;
+}
+.informationBlock > div p:last-child{
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+}
+.moreInfos{
+  min-width: 291.406px !important;
+  min-height: 238.438px !important;
+  width: 100%;
+}
+.allInfos{
+  padding: 8px;
+  overflow-y: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.allInfos h1{
+  position: relative;
+  border: none;
+  padding-bottom: 15px;
+  width: 100%;
+  justify-content: center;
+}
+.allInfos h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: orangered;
+}
+
+.allInfos h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 2px; 
+  background-color: gray;
+}
+.allInfos p{
+  width: 100%;
+  color: rgb(204, 204, 204);
+  margin-top: 20px;
+  overflow-y: scroll;
+}
+.allInfos p::-webkit-scrollbar {
+  width: 4px; 
+ margin-right: 5px;
+  background-color: #212529;
+}
+
+.allInfos p ::-webkit-scrollbar-thumb {
+  background: linear-gradient(87deg, rgb(250, 129, 4) 0px, rgb(187, 41, 20) 100%) !important;;
+  border-radius: 4px;
+  max-height: 200px;
+}
+@media (max-width: 630px){
+  .dispFlex{
+    flex-direction: column;
+    max-height: 100%;
+  }
+  .rigthSide{
+    max-width: 290px;
+  }
+}

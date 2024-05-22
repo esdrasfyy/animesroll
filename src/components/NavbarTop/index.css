@@ -1,0 +1,365 @@
+ul{
+  display: flex;
+}
+ul li button{
+  display: flex;
+}
+ul li button p{
+  font-size: 15px;
+  margin-left: 5px;
+}
+li:nth-child(3) button {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  cursor: pointer;
+}
+li:nth-child(4) button {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+li:nth-child(5) button {
+  font-size: 25px;
+}
+li:nth-child(6) button {
+  font-size: 20px;
+}
+li:nth-child(n+7) button {
+  background-color: #fff;
+}
+.dropdownPai{
+  position: relative;
+}
+.dropdown{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 400px;
+  height: auto;
+  padding: 15px;
+  margin: 11.2px;
+  border-radius: 3px;
+
+  background-color: rgba(45, 45, 45, 0.7);
+  backdrop-filter: blur(20px);
+  box-shadow:  rgba(0, 0, 0, 0.5) 0px 16px 48px 0px;
+  z-index: 999999;
+}
+.dropdown li{
+  cursor: pointer;
+}
+.menuColunm{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 11.2px;
+  border-radius: 3px;
+
+  background-color: rgba(45, 45, 45, 0.7);
+  backdrop-filter: blur(20px);
+  box-shadow:  rgba(0, 0, 0, 0.5) 0px 16px 48px 0px;
+  z-index: 999999;
+}
+.styled1{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.styled1 li:nth-child(1){
+  display: flex;
+}
+
+.styled1 li:nth-child(1) > div{
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.calendar p:nth-child(1){
+  font-size: 16px;
+  color: #28A745;
+  font-weight: 500;
+  width: 100%;
+}
+.calendar{
+  flex-direction: column;
+  font-size: 12px;
+  color: rgb(165, 165, 165);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  column-gap: 0 !important;
+  row-gap: 0 !important;
+  margin-left: 20px;
+}
+.calendarLogo{
+  font-size: 22px;
+  font-weight: bold;
+  background-image: linear-gradient(87deg, rgb(45, 206, 137) 0px, rgb(41, 167, 70) 100%);
+  min-width: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  border-radius: 50%;
+}
+  .calendarLogo > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  .aaa{
+    max-height: 48px;
+  }
+  .styled1 li:nth-child(2){
+    display: flex;
+  }
+  .notes{
+   flex-direction: column;
+   font-size: 12px;
+   color: rgb(165, 165, 165);
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   column-gap: 0 !important;
+   row-gap: 0 !important;
+   margin-left: 20px;
+  }
+  .notesLogo{
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(87deg, rgb(119, 53, 189) 0px, rgb(168, 121, 218) 100%);
+    min-width: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    border-radius: 50%;
+  }
+  .notesLogo > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  .notes p:nth-child(1){
+    font-size: 16px;
+    color: #ba97de;
+    font-weight: 500;
+    width: 100%;
+  }
+  .styled1 li:nth-child(3){
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .pedidos{
+   flex-direction: column;
+   font-size: 12px;
+   color: rgb(165, 165, 165);
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   column-gap: 0 !important;
+   row-gap: 0 !important;
+   margin-left: 20px;
+  }
+  .pedidosLogo{
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(87deg, rgb(220, 53, 69) 0px, rgb(245, 96, 54) 100%);
+    min-width: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    border-radius: 50%;
+  }
+  .pedidosLogo > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  .pedidos p:nth-child(1){
+    font-size: 16px;
+    color: rgb(220, 53, 69);
+    font-weight: 500;
+    width: 100%;
+  }
+  .styled2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .styled2 li:nth-child(1){
+    display: flex;
+  }
+  
+  .styled2 li:nth-child(1) > div{
+    display: flex;
+    align-items: center;
+    height: 45px;
+  }
+  .animesList{
+    display: flex;
+    flex-direction: column;
+  }
+  .animesList p:nth-child(1){
+    font-size: 16px;
+    color: #dc3547;
+    font-weight: 500;
+    width: 100%;
+  }
+  .animesList{
+    flex-direction: column;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    margin-left: 20px;
+  }
+  .animesListLogo{
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(87deg, rgb(220, 53, 69) 0px, rgb(245, 96, 54) 100%)
+    ;
+    min-width: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    border-radius: 50%;
+  }
+    .animesListLogo > div{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+    .styled2 li:nth-child(2){
+      display: flex;
+    }
+    
+    .styled2 li:nth-child(2) > div{
+      display: flex;
+      align-items: center;
+      height: 45px;
+    }
+  .filmesList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-start;
+  }
+  .filmesList p:nth-child(1){
+    font-size: 16px;
+    color: #ff8100;
+    font-weight: 500;
+    width: 100%;
+  }
+  .filmesList{
+    flex-direction: column;
+    font-size: 12px;
+    color: rgb(165, 165, 165);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    column-gap: 0 !important;
+    row-gap: 0 !important;
+    margin-left: 20px;
+  }
+  .filmesListLogo{
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(87deg, rgb(251, 99, 64) 0px, rgb(251, 177, 64) 100%);
+    min-width: 48px;
+    max-width: 48px;
+    max-height: 48px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    border-radius: 50%;
+  }
+    .filmesListLogo > div{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
+    .filmesList p:nth-child(2) , .animesList p:nth-child(2){
+      width: 100%;
+    }
+@media (max-width: 1000px){
+  .navbartop{
+    display: none;
+  }
+  .clamp-lines {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-width: 200px;
+    text-overflow: inherit;
+    text-align: left;
+    
+  }
+}
+.dropdown,
+.menuColunm {
+  display: flex;
+  flex-direction: column;
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

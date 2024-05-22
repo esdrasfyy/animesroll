@@ -1,0 +1,90 @@
+main{
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  min-height: calc(100vh - 600px);
+}
+
+main > div h1{
+  color: #ccc;
+  font-weight: 500;
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.listEp{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+.marquee{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  width: 100%;
+  min-width: 600px;
+  flex-wrap: wrap;
+  gap:50%;
+  justify-content: space-evenly;
+}
+.bell{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  background-image: linear-gradient(87deg, rgb(185, 65, 0) 0px, rgb(255, 145, 0) 100%);
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  font-size: 24px;
+  animation: pulsar 1s infinite;
+  cursor: pointer;
+}
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.listNews{
+  width: 75%;
+  background-image: linear-gradient(87deg, rgb(185, 65, 0) 0px, rgb(255, 145, 0) 100%);
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+
+}
+.listNews button{
+  font-weight: 300px !important;
+  color: #fff;
+}
+
+@media (max-width: 1000px){
+  .marquee{
+    max-width: auto;
+    min-width: auto;
+  }
+}
